@@ -1,0 +1,86 @@
+.user-cabinet-header {
+    font-size: 20px;
+}
+
+.site-header {
+    border-bottom: 1px solid #26a69a;
+
+}
+
+.site-title {
+    font-size: 24px;
+}
+
+.modal-project {
+    width: 335px;
+    padding: 20px 20px 10px;
+    background-color: #ffffff;
+    border: 2px solid #26a69a;
+    margin: 10% auto;
+    text-align: center;   
+    border-radius: 15px;
+    position: relative;
+    
+}
+.rules-block{
+    margin-top: 20px;
+}
+.row{
+    margin-bottom: 0;
+    
+}
+.modal-project-close{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.slider-form-wrp{
+    overflow: hidden;
+}
+
+.modal-wrp {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.modal-show{
+    margin-top: 40px;
+    margin-left: 2px;
+   }
+.read-rules{
+    margin-top: 15px;    
+}
+
+.slider-form {
+    width: 600px;
+    height: 550px;
+    /* background-color: rgb(194, 194, 194); */
+    transition: all ease 500ms;
+}
+
+.left-rules,
+.right-rules {
+    width: 50%;
+    min-height: 100px;
+    float: left;
+    padding: 20px;
+}
+
+.right-rules {
+    /* background-color: rgb(112, 112, 112); */
+   
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.read-rules,
+.read-rules-back {
+    color: #26a69a;
+    cursor: pointer;
+    text-decoration-line: underline;
+}

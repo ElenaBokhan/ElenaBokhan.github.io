@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cabinet</title>
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="container">
+			<div class="row">
+				<div class="col s8">
+					<h1 class="site-title center-align">Our project</h1>
+				</div>
+				<div class="col s4">
+					<button class="modal-show waves-effect waves-light btn" data-modal="#log-in">Login</button>
+					<button class="modal-show waves-effect waves-light btn" data-modal="#sign-up">Signup</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal-wrp hide" id="sign-up">		
+		<div class="modal-project">
+			<div class="slider-form-wrp">
+				<div class="slider-form">				
+					<div class="left-rules">
+						<form>
+							<div class="row delete-margin">
+								<div class="input-field col s12">
+									<input placeholder="Your name" id="signup-name" type="text" class="validate" name="name">
+									<label for="signup-name">Name:</label>
+								</div>
+								<div class="input-field col s12">
+									<input placeholder="Your password" id="signup-pass" type="text" class="validate" name="pass">
+									<label for="signup-pass">Password:</label>
+								</div>
+								<div class="input-field col s12">
+									<input placeholder="Your email" id="signup-email" type="text" class="validate" name="email">
+									<label for="signup-email">Email:</label>
+								</div>
+								<div class="input-field col s12">
+									<input id="signup-birthday" type="text" class="datepicker" name="birthday">
+									<label class=" active" for="signup-birthday">Birthday:</label>
+								</div>
+								<div class="col s12 left-align">Sex:
+									<form action="#">
+										<p>
+											<label>
+												<input name="sex" value="male" type="radio" class="sex with-gap" checked />
+												<span>Male</span>
+											</label>
+										</p>
+										<p>
+											<label>
+												<input name="sex" value="female" type="radio" class="sex with-gap" />
+												<span>Female</span>
+											</label>
+										</p>
+										<p>
+											<label>
+												<input name="sex" value="other" type="radio" class="sex with-gap" />
+												<span>Other</span>
+											</label>
+										</p>
+									</form>
+								</div>
+								<div class="col s12 align-right">
+									<button id="signup-submit" class="waves-effect waves-light btn disabled">Signup</button>
+								</div>
+								<div class="col s12 rules-block">
+									<div class="col s6 align-right read-rules">Read rules</div>
+									<div class="col s6 align-right">
+										<p>
+											<label>
+												<input type="checkbox" class="filled-in" id="agree-rules">
+												<span>Agree</span>
+											</label>
+										</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="right-rules">
+						<p class="read-rules-back">Back</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima rerum cupiditate tempore sit voluptate
+						cumque eveniet officiis. Suscipit quidem illo minus quisquam necessitatibus! Nisi hic harum nesciunt sed
+						perferendis!</p>
+						<hr>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima rerum cupiditate tempore sit voluptate
+						cumque eveniet officiis. Suscipit quidem illo minus quisquam necessitatibus! Nisi hic harum nesciunt sed
+						perferendis!</p>
+						<hr>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima rerum cupiditate tempore sit voluptate
+						cumque eveniet officiis. Suscipit quidem illo minus quisquam necessitatibus! Nisi hic harum nesciunt sed
+						perferendis!</p>
+						<hr>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima rerum cupiditate tempore sit voluptate
+						cumque eveniet officiis. Suscipit quidem illo minus quisquam necessitatibus! Nisi hic harum nesciunt sed
+						perferendis!</p>
+						<hr>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima rerum cupiditate tempore sit voluptate
+						cumque eveniet officiis. Suscipit quidem illo minus quisquam necessitatibus! Nisi hic harum nesciunt sed
+						perferendis!</p>
+						<p class="read-rules-back">Back</p>
+					</div>
+				</div>				
+			</div>
+			<button class="modal-project-close btn-floating btn-large waves-effect waves-light teal "><i class="material-icons">clear</i></button>
+		</div>			
+	</div>
+	
+	<div class="modal-wrp hide" id="log-in">
+		<div class="modal-project">
+			<form>
+				<div class="row">
+					<div class="input-field col s12">
+						<input placeholder="Your email" id="login-email" type="text" class="validate" name="email">
+						<label for="login-email">Email:</label>
+					</div>
+					<div class="input-field col s12">
+						<input placeholder="Your password" id="login-pass" type="text" class="validate" name="email">
+						<label for="login-pass">Email:</label>
+					</div>
+					<div class="col s12 align-right">
+						<button id="login-submit" class="waves-effect waves-light btn" >Login</button>
+					</div>
+				</div>				
+			</form>
+			<button class="modal-project-close btn-floating btn-large waves-effect waves-light teal "><i class="material-icons">clear</i></button>
+		</div>
+	</div>
+
+	<script src="scripts/materialize.min.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
