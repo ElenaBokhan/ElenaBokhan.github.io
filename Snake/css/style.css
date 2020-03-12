@@ -1,0 +1,106 @@
+body {
+    background: #2e353d;
+    background-image: url(../img/pattern.jpg);
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgba(193,0,76, .9);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 20px;
+   text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 22px;
+    margin: 17px;
+    color: white;
+    background: #ca0657;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;    
+    display: block;
+    margin: 26px auto;
+    font-size: 24px;
+}
+
+
+button:hover {
+    background:  #ec116d;
+}
+
+button:active {
+    background: #ff4c96;
+    color: black;
+}
+hr{
+    border: 2px solid rgb(193,0,76);
+    margin: 30px;
+}
+#game {
+    border-collapse: collapse;
+    margin: 30px 0; 
+    margin: 0 auto;
+    background-color: #2e353d;
+}
+.wrp{
+    background-color: #2e353d;
+    border: 11px solid rgb(193,0,76);
+    width: 860px;
+    border-radius: 40px;
+    margin: 30px 30px 30px 0;
+    padding: 10px;
+    float: left;
+}
+.menu{
+    padding-top: 40px;
+    width: 300px;
+    height: 550px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: right;
+}
+td {
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid #444a52;
+    transition: all 200ms ease-in;
+}
+
+.food {
+    background-image: url(../img/mouse.png);
+    background-size: contain;
+    background-repeat: no-repeat;   
+    background-position: center;
+}
+
+.snakeBody {
+    background: #00d021;
+}
+
+.message {
+    color:  #00d021;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.score {
+    color: #ca0657;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
