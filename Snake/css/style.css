@@ -3,7 +3,7 @@ body {
     background-image: url(../img/pattern.jpg);
 }
 .container{
-    width: 1280px;
+    width: 1230px;
     margin: 0 auto;
 }
 .header{
@@ -64,7 +64,7 @@ hr{
 }
 .menu{
     padding-top: 40px;
-    width: 300px;
+    width: 280px;
     height: 550px;
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.8);
