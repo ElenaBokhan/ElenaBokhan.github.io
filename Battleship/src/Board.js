@@ -1,6 +1,6 @@
 class Board {
-    constructor() {
-        this.boardGame = document.getElementById("game");
+    constructor(name) {
+        this.boardGame = document.getElementById(name);
     }
     init(setting, ship) {
         this.setting = setting;
@@ -54,7 +54,7 @@ class Board {
     }
 
     getCellElem(x, y) {
-        return document.querySelector(`tr:nth-child(${y}) td:nth-child(${x})`);
+        return this.boardGame.querySelector(`tr:nth-child(${y}) td:nth-child(${x})`);
     }
 
 }
